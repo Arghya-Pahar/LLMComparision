@@ -57,6 +57,13 @@ const ChatApp = () => {
               "Token Count": "60",
               "Response": `# Kubernetes Overview\n\nKubernetes is an open-source system for automating deployment, scaling, and management of containerized applications.\n\n## Key Features\n\n1. **Automated deployment and scaling**\n2. **Load balancing**\n3. **Self-healing mechanisms**\n4. **Secret and configuration management**\n\n## Components of Kubernetes\n\n1. **Master Node:** Manages the cluster and schedules workloads.\n2. **Worker Nodes:** Runs applications in containers.\n3. **Kubelet:** An agent that runs on each worker node.\n4. **Kube Proxy:** Handles network communication within the cluster.\n\nKubernetes makes it easier to manage containerized applications at scale.# Kubernetes Overview\n\nKubernetes is an open-source system for automating deployment, scaling, and management of containerized applications.\n\n## Key Features\n\n1. **Automated deployment and scaling**\n2. **Load balancing**\n3. **Self-healing mechanisms**\n4. **Secret and configuration management**\n\n## Components of Kubernetes\n\n1. **Master Node:** Manages the cluster and schedules workloads.\n2. **Worker Nodes:** Runs applications in containers.\n3. **Kubelet:** An agent that runs on each worker node.\n4. **Kube Proxy:** Handles network communication within the cluster.\n\nKubernetes makes it easier to manage containerized applications at scale.`
             }
+            ,
+            {
+              "Model": "model 3",
+              "time": "2s",
+              "Token Count": "60",
+              "Response": `wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww`
+            }
         
         
       ];

@@ -35,7 +35,7 @@ const Chattext = ({ obj }) => {
               className="bg-[#ece3ff] flex flex-col p-4 rounded-lg shadow-md w-full sm:w-3/4 md:w-[48%] mb-4 transition-all h-auto"
             >
               <h2 className="font-bold text-md sm:text-base text-gray-700">{modelResponse.Model}</h2>
-              <div className="mt-2 text-sm sm:text-base">
+              <div className="mt-2 text-sm sm:text-base break-words">
                 <ReactMarkdown
                   remarkPlugins={[remarkGfm]}
                   components={{
