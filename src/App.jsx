@@ -11,7 +11,6 @@ const ChatApp = () => {
 
   const generateResponse = async (history) => {
     const updateHistory=(response,isError=false)=>{
-      console.log(response);
       setChatStorage(prev=>[...prev.filter((msg)=>msg.text!=="Generating..."),{role:"model",text:response,isError}])
       
     }

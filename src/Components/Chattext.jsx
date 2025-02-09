@@ -20,7 +20,7 @@ const Chattext = ({ obj }) => {
         return (
           <div className="bg-red-200 p-3 rounded-lg shadow-md w-full sm:w-3/4 md:w-[48%] mb-4 text-red-700">
             <p className="font-bold text-lg sm:text-md">Error</p>
-            <p className="mt-2 text-sm sm:text-base">{obj.errorMessage || "An error occurred."}</p>
+            <p className="mt-2 text-sm sm:text-base">{obj.text || "An error occurred."}</p>
           </div>
         );
       }
