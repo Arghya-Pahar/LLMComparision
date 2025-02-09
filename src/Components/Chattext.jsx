@@ -3,7 +3,9 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { vs2015 } from "react-syntax-highlighter/dist/esm/styles/hljs";
-
+import remarkMath from "remark-math";
+import "katex/dist/katex.min.css"; // Import KaTeX styles
+import "../../src/index.css"
 const Chattext = ({ obj }) => {
   const renderMessageContent = () => {
     if (obj.role === "user") {
@@ -37,7 +39,7 @@ const Chattext = ({ obj }) => {
               <h2 className="font-bold text-md sm:text-base text-gray-700">{modelResponse.Model}</h2>
               <div className="mt-2 text-sm sm:text-base break-words">
                 <ReactMarkdown
-                  remarkPlugins={[remarkGfm]}
+                  remarkPlugins={[remarkGfm, remarkMath]} // CHANGED: Added `remarkMath` for math support
                   components={{
                     p: ({ children }) => <p className="mb-2">{children}</p>,
                     strong: ({ children }) => <strong className="font-bold">{children}</strong>,

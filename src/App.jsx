@@ -27,6 +27,12 @@ const ChatApp = () => {
       );
       const data = [
         {
+          "Model": "model 3",
+          "time": "2s",
+          "Token Count": "60",
+          "Response": "Sure! Below is a structured output for testing UI elements:\n\n### Text Formatting:\n- **Bold Text**\n- *Italic Text*\n- ~~Strikethrough~~\n- `Inline Code`\n\n### Code Block:\n```python\nimport numpy as np\n\ndef matrix_mult(a, b):\n    return np.dot(a, b)\n\nA = np.array([[1, 2], [3, 4]])\nB = np.array([[5, 6], [7, 8]])\nprint(matrix_mult(A, B))\n```\n\n### Markdown Table:\n| Name  | Age | Country  |\n|-------|-----|----------|\n| Alice |  25 | USA      |\n| Bob   |  30 | UK       |\n| Eve   |  29 | Germany  |\n\n### Bullet Points with Nesting:\n- Item 1\n  - Subitem 1.1\n  - Subitem 1.2\n- Item 2\n  - Subitem 2.1\n    - Deep Subitem 2.1.1\n- Item 3 ✅\n\n### Ordered List:\n1. Step One\n2. Step Two\n   1. Sub-step A\n   2. Sub-step B\n\n### Mathematical Expressions:\n- Inline: $E = mc^2$\n- Block:\n$$\n\\int_{0}^{1} x^2 dx = \\frac{1}{3}\n$$\n\n### JSON Data:\n```json\n{\n  \"user\": \"test_user\",\n  \"messages\": [\n    { \"role\": \"user\", \"content\": \"Hello!\" },\n    { \"role\": \"model\", \"content\": \"Hi there! How can I assist you?\" }\n  ]\n}\n```\n\n### Long Text for Scrolling:\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec massa id leo posuere malesuada eget nec urna. Aenean quis massa eu velit tincidunt elementum at et dui. Phasellus tincidunt odio eget sem suscipit, ac feugiat augue bibendum. Integer vel nunc nec lacus suscipit vestibulum in at orci. Duis a risus ut enim scelerisque mollis. Etiam sagittis turpis at justo vehicula, et elementum ipsum fermentum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Mauris accumsan dolor id odio volutpat, et scelerisque sapien faucibus. Aliquam erat volutpat. Nulla facilisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.\n\n### Special Characters & Emojis:\n- Unicode: 𝒜𝒷𝒸𝒹 𝟙𝟚𝟛𝟜\n- Emojis: 🚀🔥💡💻\n\n### Links:\n- [OpenAI](https://openai.com)\n- [GitHub](https://github.com)\n\n---\n\nLet me know if you need further modifications to test specific edge cases!",
+        },
+        {
           "Model": "model 1",
           "time": "1s",
           "Token Count": "45",
@@ -63,8 +69,9 @@ const ChatApp = () => {
               "time": "2s",
               "Token Count": "60",
               "Response": `wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww`
-            }
-        
+            },
+            
+            
         
       ];
      
@@ -95,7 +102,7 @@ const ChatApp = () => {
   }, [chatStorage]);
 
   return (
-    <div className="bg-white h-screen flex flex-col items-center justify-between overflow-hidden">
+    <div className="bg-white h-screen flex flex-col items-center justify-between overflow-auto-hidden">
       <header className="w-full text-gray-700 bg-[#d9c7ff] text-center py-4 text-xl font-bold shadow-md z-10 ">
         LLM Output Comparisons
       </header>
