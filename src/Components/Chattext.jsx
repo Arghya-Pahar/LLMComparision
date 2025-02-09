@@ -4,8 +4,6 @@ import remarkGfm from "remark-gfm";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { vs2015 } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import remarkMath from "remark-math";
-import "katex/dist/katex.min.css"; // Import KaTeX styles
-import "../../src/index.css"
 const Chattext = ({ obj }) => {
   const renderMessageContent = () => {
     if (obj.role === "user") {
